@@ -52,3 +52,11 @@
     {{ partial "footer.html" . }}
   </body>
 </html>
+
+<!-- open_graph_metadata -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ .Params.image | absURL }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
