@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Masood&#39;s Digital Space</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Masood&#39;s Digital Space</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2025 18:45:35 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact Me</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Wed, 08 Jan 2025 18:45:35 +0100</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Please fill out the form below to get in touch with me:&lt;/p&gt;&#xA;&lt;form action=&#34;https://formspree.io/f/xdkkpqpy&#34; method=&#34;POST&#34; style=&#34;max-width: 600px; margin: auto;&#34;&gt;&#xA;  &lt;label for=&#34;name&#34; style=&#34;display: block; margin-bottom: 5px;&#34;&gt;Name:&lt;/label&gt;&#xA;  &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required &#xA;         style=&#34;width: 100%; padding: 10px; margin-bottom: 10px; background-color: #f0f0f0; color: #000; border: 1px solid #ccc;&#34;&gt;&#xA;&lt;p&gt;&lt;label for=&#34;email&#34; style=&#34;display: block; margin-bottom: 5px;&#34;&gt;Email:&lt;/label&gt;&#xA;&lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;_replyto&#34; required &#xA;style=&#34;width: 100%; padding: 10px; margin-bottom: 10px; background-color: #f0f0f0; color: #000; border: 1px solid #ccc;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;message&#34; style=&#34;display: block; margin-bottom: 5px;&#34;&gt;Message:&lt;/label&gt;&lt;/p&gt;&#xA;  &lt;textarea id=&#34;message&#34; name=&#34;message&#34; rows=&#34;5&#34; required &#xA;            style=&#34;width: 100%; padding: 10px; margin-bottom: 10px; background-color: #f0f0f0; color: #000; border: 1px solid #ccc;&#34;&gt;&lt;/textarea&gt;&#xA;&lt;p&gt;&lt;button type=&#34;submit&#34; &#xA;style=&#34;padding: 10px 20px; background-color: #007BFF; color: #fff; border: none; cursor: pointer; border-radius: 5px;&#34;&gt;&#xA;Send&#xA;&lt;/button&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Wed, 08 Jan 2025 18:37:04 +0100</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/images/portrait.jpg&#34; alt=&#34;Masood Azizi&#34; style=&#34;float: right; width: 200px; margin: 0 0 1rem 1rem; border-radius: 50%;&#34;&gt;&#xA;&lt;h1 id=&#34;curriculum-vitae&#34;&gt;Curriculum Vitae&lt;/h1&gt;&#xA;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;senior-cloud-architect-doit-international&#34;&gt;Senior Cloud Architect, DoiT International&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Remote, Germany&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Since October 2022&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tackles complex problems of scale for customers as a strategic partner of Google Cloud Platforms and Amazon Web Services.&lt;/li&gt;&#xA;&lt;li&gt;Expertise in resolving problems, coding, algorithms, complexity analysis, and system design.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;devsecops-engineer-spark-networks&#34;&gt;DevSecOps Engineer, Spark Networks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Berlin, Germany&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;October 2021 – September 2022&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Designed and implemented cloud security solutions.&lt;/li&gt;&#xA;&lt;li&gt;Conducted auditing and security analysis of cloud workloads and components.&lt;/li&gt;&#xA;&lt;li&gt;Applied security best practices and Well-Architected Framework principles.&lt;/li&gt;&#xA;&lt;li&gt;Implemented IaaS and IaC (Infrastructure as Code) solutions using Terraform.&lt;/li&gt;&#xA;&lt;li&gt;Focused on container orchestration and DevOps practices.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;senior-cloud-consultant-storm-reply&#34;&gt;Senior Cloud Consultant, Storm Reply&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Berlin, Germany&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;April 2021 – September 2021&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>http://localhost:1313/posts/welcome/</link>
+      <pubDate>Wed, 08 Jan 2025 17:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/posts/welcome/</guid>
+      <description>&lt;p&gt;Hello, and welcome to my digital home!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Masood Azizi, a Cloud Architect passionate about designing scalable, secure, and innovative solutions in the cloud. With years of experience in AWS, DevOps, and security, this space is where I share insights, lessons, and experiences from my journey in tech.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what you can expect:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech Insights&lt;/strong&gt;: Exploring cloud architecture, DevSecOps, and automation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Career Stories&lt;/strong&gt;: Sharing experiences from my professional journey.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resources and Tips&lt;/strong&gt;: Practical guides and tools for navigating the world of cloud computing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This site is a space to connect, learn, and grow together. Whether you&amp;rsquo;re a tech enthusiast, a professional looking to level up your skills, or just curious about the cloud, there’s something here for you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

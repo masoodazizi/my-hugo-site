@@ -1,0 +1,36 @@
+baseURL = 'https://masoodazizi.com/'
+languageCode = 'en-us'
+title = "Masood's Digital Space"
+theme = "paper"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+name = "CV"
+url = "/cv/"
+weight = 1
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 2
+
+[params]
+  # color style
+  color = 'linen'                           # linen, wheat, gray, light
+
+  # header social icons
+  linkedin = 'masood-azizi'             # linkedin.com/in/YOUR_LINKEDIN_ID  
+  twitter = 'masudazizi'               # twitter.com/YOUR_TWITTER_ID
+  github = 'masoodazizi'                 # github.com/YOUR_GITHUB_ID
+#  instagram = 'masd_azizi'           # instagram.com/YOUR_INSTAGRAM_ID
+# rss = true                                # show rss icon
+
+  # home page profile
+  avatar = 'gravatar@masoodazizi.com'                 # gravatar email or image url
+  name = 'Bio'
+  bio = 'Masood Azizi is a Cloud Architect passionate about designing scalable and innovative cloud solutions. With expertise in AWS, he helps businesses harness the power of the cloud to achieve their goals. As a leadership team member of the AWS User Group in Berlin, Masood actively contributes to the local tech community by organizing events and mentoring professionals. When he’s not in the tech world, Masood enjoys fitness, video games, and spending time with his Maltipoo, Leo. Whether he’s collaborating with teams, mentoring juniors, or refining his own skills, Masood is driven by a passion for innovation and continuous growth.'
+
