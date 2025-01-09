@@ -1,0 +1,22 @@
+<footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  {{if site.Copyright}}
+    {{site.Copyright}}
+  {{else}}
+    &copy; {{ now.Year }}
+    <a class="link" href="{{ `` | absURL }}">{{ site.Title }}</a>
+  {{end}}
+  </div>
+  <a class="link mx-6" href="https://www.linkedin.com/in/masood-azizi/" rel="noopener" target="_blank"
+    >LinkedIn</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/masoodazizi/"
+    rel="noopener"
+    target="_blank"
+    >GitHub</a
+  >
+</footer>
