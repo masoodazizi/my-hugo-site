@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Masood&#39;s Digital Space</title>
+    <link>https://masoodazizi.com/posts/</link>
+    <description>Recent content in Posts on Masood&#39;s Digital Space</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2025 17:04:09 +0100</lastBuildDate>
+    <atom:link href="https://masoodazizi.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>https://masoodazizi.com/posts/welcome/</link>
+      <pubDate>Wed, 08 Jan 2025 17:04:09 +0100</pubDate>
+      <guid>https://masoodazizi.com/posts/welcome/</guid>
+      <description>&lt;p&gt;Hello, and welcome to my digital home!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Masood Azizi, a Cloud Architect passionate about designing scalable, secure, and innovative solutions in the cloud. With years of experience in AWS, DevOps, and security, this space is where I share insights, lessons, and experiences from my journey in tech.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what you can expect:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech Insights&lt;/strong&gt;: Exploring cloud architecture, DevSecOps, and automation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Career Stories&lt;/strong&gt;: Sharing experiences from my professional journey.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resources and Tips&lt;/strong&gt;: Practical guides and tools for navigating the world of cloud computing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This site is a space to connect, learn, and grow together. Whether you&amp;rsquo;re a tech enthusiast, a professional looking to level up your skills, or just curious about the cloud, there’s something here for you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
