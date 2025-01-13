@@ -1,12 +1,14 @@
 +++
-date = '2025-01-08T17:04:09+01:00'
+date = '2025-01-05T17:04:09+01:00'
 draft = false
 title = 'Welcome to My Blog'
-description: "Introduction to Masood's Digital Space and its purpose."
-tags: ["cloud", "tech", "blog"]
-categories: ["blog"]
+description = "Introduction to Masood's Digital Space and its purpose."
+tags = ["cloud", "tech", "blog"]
+categories = ["blog"]
 image = "/images/welcome.jpg" 
 +++
+
+![Welcome to My Blog - Masood's Digital Space](/images/welcome.jpg)
 
 Hello, and welcome to my digital home!
 
