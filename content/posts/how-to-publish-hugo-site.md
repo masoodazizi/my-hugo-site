@@ -201,3 +201,7 @@ The full source code of my website is available [on GitHub](https://github.com/m
 Building a personal website with Hugo and GitHub Pages has been an incredible learning experience. My website now serves as a hub for my blog, an online CV, and a professional contact page. With tools like Hugo, Formspree, and a custom domain, creating a modern, professional online presence is easier than ever.
 
 If you’re inspired to create your own site, check out my [GitHub repository](https://github.com/masoodazizi/my-hugo-site) for the source code and follow these steps. Happy building!
+
+---
+
+*Prefer reading on Medium? [Check it out here](https://medium.com/@masoodazizi.com/level-up-your-online-presence-build-your-personal-website-with-ease-bd8a8c34625a).*
