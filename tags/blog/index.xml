@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Masood&#39;s Digital Space</title>
-    <link>https://masoodazizi.com/posts/</link>
-    <description>Recent content in Posts on Masood&#39;s Digital Space</description>
+    <title>Blog on Masood&#39;s Digital Space</title>
+    <link>https://masoodazizi.com/tags/blog/</link>
+    <description>Recent content in Blog on Masood&#39;s Digital Space</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2025 18:38:00 +0100</lastBuildDate>
-    <atom:link href="https://masoodazizi.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://masoodazizi.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Build and Publish a Personal Website</title>
       <link>https://masoodazizi.com/how-to-build-and-publish-a-personal-website/</link>

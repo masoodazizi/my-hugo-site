@@ -6,8 +6,15 @@
     <description>Recent content on Masood&#39;s Digital Space</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 18:45:35 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2025 18:38:00 +0100</lastBuildDate>
     <atom:link href="https://masoodazizi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build and Publish a Personal Website</title>
+      <link>https://masoodazizi.com/how-to-build-and-publish-a-personal-website/</link>
+      <pubDate>Sun, 12 Jan 2025 18:38:00 +0100</pubDate>
+      <guid>https://masoodazizi.com/how-to-build-and-publish-a-personal-website/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://masoodazizi.com/images/how-to-publish-personal-site.jpg&#34; alt=&#34;How to Build and Publish a Personal Website&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In today’s digital world, having a personal professional website is a valuable asset for showcasing your expertise, experiences, and achievements. A personal website not only provides a centralized platform to highlight your skills but also helps you build a strong online presence. For professionals, it serves as a modern-day business card—an easily accessible portfolio that reflects your personality and expertise.&lt;/p&gt;&#xA;&lt;p&gt;I decided to create my own website, &lt;strong&gt;Masood&amp;rsquo;s Digital Space&lt;/strong&gt;, to:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Contact Me</title>
       <link>https://masoodazizi.com/contact/</link>
@@ -24,10 +31,10 @@
     </item>
     <item>
       <title>Welcome to My Blog</title>
-      <link>https://masoodazizi.com/posts/welcome/</link>
-      <pubDate>Wed, 08 Jan 2025 17:04:09 +0100</pubDate>
-      <guid>https://masoodazizi.com/posts/welcome/</guid>
-      <description>&lt;p&gt;Hello, and welcome to my digital home!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Masood Azizi, a Cloud Architect passionate about designing scalable, secure, and innovative solutions in the cloud. With years of experience in AWS, DevOps, and security, this space is where I share insights, lessons, and experiences from my journey in tech.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what you can expect:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech Insights&lt;/strong&gt;: Exploring cloud architecture, DevSecOps, and automation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Career Stories&lt;/strong&gt;: Sharing experiences from my professional journey.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resources and Tips&lt;/strong&gt;: Practical guides and tools for navigating the world of cloud computing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This site is a space to connect, learn, and grow together. Whether you&amp;rsquo;re a tech enthusiast, a professional looking to level up your skills, or just curious about the cloud, there’s something here for you.&lt;/p&gt;</description>
+      <link>https://masoodazizi.com/welcome-to-my-blog/</link>
+      <pubDate>Sun, 05 Jan 2025 17:04:09 +0100</pubDate>
+      <guid>https://masoodazizi.com/welcome-to-my-blog/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://masoodazizi.com/images/welcome.jpg&#34; alt=&#34;Welcome to My Blog - Masood&amp;rsquo;s Digital Space&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello, and welcome to my digital home!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Masood Azizi, a Cloud Architect passionate about designing scalable, secure, and innovative solutions in the cloud. With years of experience in AWS, DevOps, and security, this space is where I share insights, lessons, and experiences from my journey in tech.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what you can expect:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech Insights&lt;/strong&gt;: Exploring cloud architecture, DevSecOps, and automation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Career Stories&lt;/strong&gt;: Sharing experiences from my professional journey.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resources and Tips&lt;/strong&gt;: Practical guides and tools for navigating the world of cloud computing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This site is a space to connect, learn, and grow together. Whether you&amp;rsquo;re a tech enthusiast, a professional looking to level up your skills, or just curious about the cloud, there’s something here for you.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

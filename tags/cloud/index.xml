@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Masood&#39;s Digital Space</title>
-    <link>https://masoodazizi.com/posts/</link>
-    <description>Recent content in Posts on Masood&#39;s Digital Space</description>
+    <title>Cloud on Masood&#39;s Digital Space</title>
+    <link>https://masoodazizi.com/tags/cloud/</link>
+    <description>Recent content in Cloud on Masood&#39;s Digital Space</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2025 18:38:00 +0100</lastBuildDate>
-    <atom:link href="https://masoodazizi.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Build and Publish a Personal Website</title>
-      <link>https://masoodazizi.com/how-to-build-and-publish-a-personal-website/</link>
-      <pubDate>Sun, 12 Jan 2025 18:38:00 +0100</pubDate>
-      <guid>https://masoodazizi.com/how-to-build-and-publish-a-personal-website/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://masoodazizi.com/images/how-to-publish-personal-site.jpg&#34; alt=&#34;How to Build and Publish a Personal Website&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In today’s digital world, having a personal professional website is a valuable asset for showcasing your expertise, experiences, and achievements. A personal website not only provides a centralized platform to highlight your skills but also helps you build a strong online presence. For professionals, it serves as a modern-day business card—an easily accessible portfolio that reflects your personality and expertise.&lt;/p&gt;&#xA;&lt;p&gt;I decided to create my own website, &lt;strong&gt;Masood&amp;rsquo;s Digital Space&lt;/strong&gt;, to:&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 05 Jan 2025 17:04:09 +0100</lastBuildDate>
+    <atom:link href="https://masoodazizi.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to My Blog</title>
       <link>https://masoodazizi.com/welcome-to-my-blog/</link>
