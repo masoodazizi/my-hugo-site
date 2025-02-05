@@ -18,9 +18,9 @@ I acknowledge that dog ownership is a subjective journey; each person’s experi
 
 My wife and I had recently developed an affection for dogs, often finding joy in seeing them on the streets. A friend of ours owned a small dog, and each encounter with her deepened our appreciation for these companions. This led us to ponder: *should we bring a dog into our lives?*
 
-Such a decision isn't made lightly. Owning a dog comes with significant responsibilities. We deliberated for about a year, assessing our life circumstances and determining if a dog would fit well. While we anticipated challenges, the thought of having a loyal companion by our side, offering affection and receiving it in return, convinced us it was worth pursuing.
-
 ![Leo Photo](/images/leo-2.jpg)
+
+Such a decision isn't made lightly. Owning a dog comes with significant responsibilities. We deliberated for about a year, assessing our life circumstances and determining if a dog would fit well. While we anticipated challenges, the thought of having a loyal companion by our side, offering affection and receiving it in return, convinced us it was worth pursuing.
 
 ## The Early Days with Leo
 
@@ -48,3 +48,6 @@ Owning a dog isn't for everyone. It's not solely about the joys; like anything i
 
 In conclusion, while the initial stages of dog ownership can be overwhelming, the bond that forms over time makes the journey worthwhile. Leo has brought immeasurable joy into our lives, and we look forward to many more years of companionship with him.
 
+---
+
+*Prefer reading on Medium? [Check it out here](https://medium.com/@masoodazizi.com/a-first-time-dog-owners-journey-the-highs-lows-and-love-f99bac5e6ac2).*
