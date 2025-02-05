@@ -49,6 +49,7 @@
 {{ end }}
 
 <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  <hr>  <!-- Adds a horizontal line between posts -->
   {{ if gt .Weight 0 }}
   <span class="mb-1 inline-block text-xs tracking-wider text-orange-500"
     >Featured</span
@@ -58,6 +59,9 @@
   <time class="text-xs antialiased opacity-60"
     >{{ .Date | time.Format ":date_medium" }}</time
   >
+  {{ if .Description }}
+  <p>{{ .Description }}</p>
+  {{ end }}
   {{ if .Params.image }}
     <div class="mt-4">
       <a href="{{ .Permalink }}">
