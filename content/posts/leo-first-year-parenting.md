@@ -18,7 +18,7 @@ I acknowledge that dog ownership is a subjective journey; each person’s experi
 
 My wife and I had recently developed an affection for dogs, often finding joy in seeing them on the streets. A friend of ours owned a small dog, and each encounter with her deepened our appreciation for these companions. This led us to ponder: *should we bring a dog into our lives?*
 
-![Leo Photo](/images/leo-2.jpg)
+![Leo Photo](/images/leo-3.jpg)
 
 Such a decision isn't made lightly. Owning a dog comes with significant responsibilities. We deliberated for about a year, assessing our life circumstances and determining if a dog would fit well. While we anticipated challenges, the thought of having a loyal companion by our side, offering affection and receiving it in return, convinced us it was worth pursuing.
 
@@ -40,7 +40,7 @@ At one point, we seriously considered finding a new owner for him, doubting our 
 
 The first few months were a rollercoaster of emotions. But amidst the challenges, we couldn't overlook how cute and loving Leo was. As time passed, we learned more about him—how to care for him, love him, and receive love in return. Now, a year later, our bond with Leo has only grown stronger. He's become an integral part of our family. I often call him **"son"** and he'll always be our baby as long as he's with us.
 
-![Leo Photo](/images/leo-3.jpg)
+![Leo Photo](/images/leo-2.jpg)
 
 ## Final Reflections
 
