@@ -1,13 +1,13 @@
 +++
 date = '2025-01-08T18:37:04+01:00'
 draft = false
+title = 'Curriculum Vitae'
 +++
 
-<img src="/images/portrait.jpg" alt="Masood Azizi" style="float: right; width: 200px; margin: 0 0 1rem 1rem; border-radius: 50%;">
+<img src="/images/portrait.jpg" alt="Masood Azizi" style="float: right; width: 200px; margin: -3rem 0 1rem 1rem; border-radius: 50%;">
 
-# Curriculum Vitae
-
-<br><br>
+<br>
+<br>
 
 ## Work Experience
 
