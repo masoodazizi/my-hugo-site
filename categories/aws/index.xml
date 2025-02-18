@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Masood&#39;s Digital Space</title>
+    <link>https://masoodazizi.com/categories/aws/</link>
+    <description>Recent content in Aws on Masood&#39;s Digital Space</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Feb 2025 16:31:22 +0100</lastBuildDate>
+    <atom:link href="https://masoodazizi.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unraveling the Unknown Costs of CloudWatch Metrics</title>
+      <link>https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/</link>
+      <pubDate>Thu, 13 Feb 2025 16:31:22 +0100</pubDate>
+      <guid>https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://masoodazizi.com/images/notebook-cost-analysis.png&#34; alt=&#34;Unraveling the Unknown Costs of CloudWatch Metrics&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Cloud monitoring is essential for maintaining and optimizing AWS infrastructure, with Amazon CloudWatch being a primary tool for tracking metrics, logs, and alarms. However, as your AWS usage scales, so do your CloudWatch costs - and sometimes, those costs can be difficult to trace.&lt;/p&gt;&#xA;&lt;p&gt;A common challenge AWS users face is pinpointing the exact cost drivers for CloudWatch in the &lt;strong&gt;Cost &amp;amp; Usage Report (CUR)&lt;/strong&gt;. While the report provides a high-level breakdown, it lacks the detailed attribution needed to identify specific sources of high costs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

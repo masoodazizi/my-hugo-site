@@ -2,13 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://masoodazizi.com/tags/athena/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/aws/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/categories/aws/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://masoodazizi.com/categories/blog/</loc>
-    <lastmod>2025-02-03T20:07:32+01:00</lastmod>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://masoodazizi.com/categories/</loc>
-    <lastmod>2025-02-03T20:07:32+01:00</lastmod>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/cloud-finops/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/cloudtrail/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/cloudwatch/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/cost-optimization/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/doit/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/doit-cloud-intelligence/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/posts/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/tags/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/</loc>
+    <lastmod>2025-02-13T16:31:22+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -42,27 +107,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://masoodazizi.com/</loc>
-    <lastmod>2025-02-03T20:07:32+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://masoodazizi.com/categories/personal-experience/</loc>
     <lastmod>2025-02-03T20:07:32+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://masoodazizi.com/tags/pet/</loc>
-    <lastmod>2025-02-03T20:07:32+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://masoodazizi.com/posts/</loc>
-    <lastmod>2025-02-03T20:07:32+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://masoodazizi.com/tags/</loc>
     <lastmod>2025-02-03T20:07:32+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,558 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Unraveling the Unknown Costs of CloudWatch Metrics - Masood&#39;s Digital Space</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="
+Introduction
+Cloud monitoring is essential for maintaining and optimizing AWS infrastructure, with Amazon CloudWatch being a primary tool for tracking metrics, logs, and alarms. However, as your AWS usage scales, so do your CloudWatch costs - and sometimes, those costs can be difficult to trace.
+A common challenge AWS users face is pinpointing the exact cost drivers for CloudWatch in the Cost &amp; Usage Report (CUR). While the report provides a high-level breakdown, it lacks the detailed attribution needed to identify specific sources of high costs." />
+  <meta name="author" content="Bio" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://masoodazizi.com/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://masoodazizi.com/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/a753a72090c4eaa9e0a9aab79d2d74f7?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://masoodazizi.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://masoodazizi.com/github.svg" />
+  
+  <link rel="preload" as="image" href="https://masoodazizi.com/linkedin.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://masoodazizi.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="https://masoodazizi.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://masoodazizi.com/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.144.0">
+
+  
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Unraveling the Unknown Costs of CloudWatch Metrics">
+  <meta itemprop="description" content="A deep dive into uncovering hidden CloudWatch costs using CloudTrail and Athena to optimize AWS monitoring expenses.">
+  <meta itemprop="datePublished" content="2025-02-13T16:31:22+01:00">
+  <meta itemprop="dateModified" content="2025-02-13T16:31:22+01:00">
+  <meta itemprop="wordCount" content="946">
+  <meta itemprop="keywords" content="Aws,Cloudwatch,Cloudtrail,Athena,Cost-Optimization,Cloud-Finops,Doit,Doit-Cloud-Intelligence">
+  
+  <meta property="og:url" content="https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/">
+  <meta property="og:site_name" content="Masood&#39;s Digital Space">
+  <meta property="og:title" content="Unraveling the Unknown Costs of CloudWatch Metrics">
+  <meta property="og:description" content="A deep dive into uncovering hidden CloudWatch costs using CloudTrail and Athena to optimize AWS monitoring expenses.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-13T16:31:22+01:00">
+    <meta property="article:modified_time" content="2025-02-13T16:31:22+01:00">
+    <meta property="article:tag" content="Aws">
+    <meta property="article:tag" content="Cloudwatch">
+    <meta property="article:tag" content="Cloudtrail">
+    <meta property="article:tag" content="Athena">
+    <meta property="article:tag" content="Cost-Optimization">
+    <meta property="article:tag" content="Cloud-Finops">
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unraveling the Unknown Costs of CloudWatch Metrics">
+  <meta name="twitter:description" content="A deep dive into uncovering hidden CloudWatch costs using CloudTrail and Athena to optimize AWS monitoring expenses.">
+
+  
+  
+
+  
+  <link rel="canonical" href="https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://masoodazizi.com/"
+      >Masood&#39;s Digital Space</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/cv/"
+        >CV</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/masudazizi"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/masoodazizi"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/masood-azizi"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Unraveling the Unknown Costs of CloudWatch Metrics</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Feb 13, 2025</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><img src="/images/notebook-cost-analysis.png" alt="Unraveling the Unknown Costs of CloudWatch Metrics"></p>
+<h2 id="introduction">Introduction</h2>
+<p>Cloud monitoring is essential for maintaining and optimizing AWS infrastructure, with Amazon CloudWatch being a primary tool for tracking metrics, logs, and alarms. However, as your AWS usage scales, so do your CloudWatch costs - and sometimes, those costs can be difficult to trace.</p>
+<p>A common challenge AWS users face is pinpointing the exact cost drivers for CloudWatch in the <strong>Cost &amp; Usage Report (CUR)</strong>. While the report provides a high-level breakdown, it lacks the detailed attribution needed to identify specific sources of high costs.</p>
+<p>This article presents a real-world example of diagnosing unexpected CloudWatch costs using <strong>DoiT Cloud Intelligence</strong>. After identifying high-cost operations, we will demonstrate how to leverage <strong>CloudTrail data events</strong> and <strong>Amazon Athena</strong> to uncover the origins of these charges and gain actionable insights. By the end, you&rsquo;ll have a clear strategy for understanding and managing hidden CloudWatch costs.</p>
+<hr>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>Amazon CloudWatch is an essential monitoring tool for AWS environments, offering detailed insights into metrics and logs. However, its cost structure can sometimes feel opaque, making it challenging to identify the source of unexpected billing spikes.</p>
+<p>While the Cost &amp; Usage Report (CUR) provides a granular breakdown of AWS costs, it falls short when it comes to resource-level visibility for specific charges. A notable example is <code>GetMetricData</code>, an API operation used to retrieve CloudWatch metric data. Despite its significant impact on costs, CUR does not provide sufficient detail to determine which services, applications, or users are responsible for these charges.</p>
+<p>This lack of transparency makes it challenging for AWS users to optimize costs, prevent budget overruns, and make informed decisions about their monitoring configurations.</p>
+<hr>
+<h2 id="identifying-high-costs-in-cloudwatch">Identifying High Costs in CloudWatch</h2>
+<p>To illustrate this challenge, we used DoiT Cloud Analytics reports, which help visualize and interpret cloud cost data. The cost data can be represented in various diagrams, filtered and grouped for better insights.</p>
+<p>For instance, the following analysis provides a detailed cost breakdown of CloudWatch usage over 28 days, highlighting the consistently high costs associated with GMD-Metrics (GetMetricData) operations.</p>
+<p><img src="/images/doit-cost-1.png" alt="DoiT Cost Diagram"></p>
+<p>The cost table below further categorizes CloudWatch expenses by SKU (Stock Keeping Unit), operation type, and resource information. Notably:</p>
+<ul>
+<li><strong>GMD-Metrics (<code>GetMetricData</code>) is a top cost driver.</strong></li>
+<li><strong>Resource information is missing</strong>, making it difficult to determine the source of these requests.</li>
+<li>MetricMonitorUsage also contributes to costs, but to a lesser extent.</li>
+</ul>
+<p><img src="/images/doit-cost-2.png" alt="DoiT Cost Table"></p>
+<p>Since <code>GetMetricData</code> is driving significant and unexplained costs, we need a more detailed investigation using <strong>CloudTrail data events and Amazon Athena</strong> to trace its origin.</p>
+<hr>
+<h2 id="enabling-cloudtrail-dataevents">Enabling CloudTrail Data Events</h2>
+<p>AWS CloudTrail logs management events by default, such as IAM changes, security configurations, and resource provisioning. However, data events, which capture service-specific API calls like S3 object-level operations or Lambda executions, are <strong>not enabled by default</strong>.</p>
+<p>Since we need to track <strong>CloudWatch Metrics events</strong>, we must explicitly enable CloudTrail data events. This can be configured in an existing trail or by creating a new one.</p>
+<h3 id="setting-up-cloudtrail">Setting Up CloudTrail</h3>
+<ol>
+<li>
+<p>Choose a CloudTrail trail</p>
+<ul>
+<li>Modify an existing trail or create a new one.</li>
+<li>Define an <strong>S3 bucket</strong> for storing CloudTrail logs.</li>
+</ul>
+</li>
+<li>
+<p>Configure Optional Features</p>
+<ul>
+<li>KMS Encryption (optional) for added security.</li>
+<li>Log validation &amp; SNS notifications (optional, for integrity and alerts).</li>
+<li>CloudWatch Logs storage (not applicable here since we use Athena for analysis).</li>
+</ul>
+</li>
+</ol>
+<h3 id="defining-the-data-event-for-cloudwatch-metrics">Defining the Data Event for CloudWatch Metrics</h3>
+<ol>
+<li>Select CloudWatch metric as the Data Event Type.</li>
+<li>Specify Log Selector:
+<ul>
+<li><strong>All events</strong> (our choice for simplicity).</li>
+<li>Read-only events or Write-only events</li>
+<li>Use Custom selectors for more control.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/cloudtrail-data-event.png" alt="AWS CloudTrail Data Event"></p>
+<p>Once enabled, CloudTrail logs will start capturing <strong>CloudWatch <code>GetMetricData</code> requests</strong>, but we need to wait for logs to accumulate before analyzing them.</p>
+<hr>
+<h2 id="analyzing-log-data-viaathena">Analyzing Log Data via Athena</h2>
+<h3 id="creating-an-athena-table-for-cloudtrail-logs">Creating an Athena Table for CloudTrail Logs</h3>
+<p>With CloudTrail now logging <strong>CloudWatch <code>GetMetricData</code> requests</strong> to an <strong>S3 bucket</strong>, we can use <strong>Amazon Athena</strong> to analyze them.</p>
+<p>To analyze CloudTrail logs using Amazon Athena, you must create a table referencing the log data stored in your S3 bucket:</p>
+<ul>
+<li>Access the CloudTrail Console and navigate to <strong>Event history</strong> in the left-hand menu.</li>
+<li>Click on <strong>Create Athena table</strong>, and in the Storage location dropdown, select the S3 bucket where your CloudTrail logs are stored.</li>
+</ul>
+<p><img src="/images/cloudtrail-athena-table.png" alt="CloudTrail Create Athena Table"></p>
+<h3 id="querying-getmetricdata-events">Querying GetMetricData Events</h3>
+<p>Now, we can query who or what is making <code>GetMetricData</code> requests in Amazon Athena. This SQL query is just an example using a small sample dataset. For a real dataset, a different query may yield more accurate results.</p>
+<p><img src="/images/athena-table-1.png" alt="Athena Table"></p>
+<pre tabindex="0"><code>SELECT
+    COUNT(*) as count,
+    eventname,
+    useridentity.principalId,
+    useridentity.arn
+FROM cloudtrail_logs_aws_cloudtrail_logs_cw_metrics
+WHERE eventname = &#39;GetMetricData&#39;
+GROUP BY eventname, useridentity.principalId, useridentity.arn
+ORDER BY count DESC
+LIMIT 100;
+</code></pre><h3 id="interpreting-theresults">Interpreting the Results</h3>
+<p>The query results (example shown below) reveal the sources generating GetMetricData requests.</p>
+<ul>
+<li>The top row shows <strong>18 requests</strong>, making it the <strong>primary cost driver</strong>.</li>
+<li>The <code>principalId</code> and <code>arn</code> columns help identify whether the requests originate from a <em>specific AWS service, IAM user/role, or application</em>.</li>
+<li>If excessive requests are unnecessary, consider <em>reducing polling frequency, optimizing monitoring settings, or restricting access</em> to lower costs.</li>
+</ul>
+<p><img src="/images/athena-result-1.png" alt="Athena Result"></p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hidden CloudWatch costs, particularly those driven by <code>GetMetricData</code>, can be challenging to track using AWS&rsquo;s <strong>Cost &amp; Usage Report (CUR)</strong>. By using <strong>CloudTrail data events</strong> and <strong>Amazon Athena</strong>, we gained detailed insights into the exact sources responsible for these requests.
+To avoid future unexpected high costs, consider:
+Optimizing metric queries to reduce frequency.
+Restricting IAM permissions for <code>GetMetricData</code>.
+Using AWS Cost Explorer or <em>DoiT Cloud Intelligence</em> for real-time cost monitoring.</p>
+<p>With these strategies, you can <strong>gain full visibility into CloudWatch costs</strong>, ensuring efficient monitoring without unnecessary expenses. If you&rsquo;ve encountered similar challenges, try this approach and share your findings!</p>
+<h3 id="resources-and-references">Resources and References:</h3>
+<ul>
+<li><a href="https://www.doit.com/platform/">DoiT Cloud Intelligence</a></li>
+<li><a href="https://www.doit.com/cloud-analytics/">DoiT Cloud Analytics</a></li>
+<li><a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/athena/latest/ug/what-is.html">Amazon Athena Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html">AWS Cost &amp; Usage Report Guide</a></li>
+<li><a href="https://docs.aws.amazon.com/athena/latest/ug/create-cloudtrail-table-ct.html">How to create an Athena table for CloudTrail logs</a></li>
+</ul>
+<hr>
+<p><em>This post was originally published on Medium <a href="https://medium.com/@masoodazizi.com/unraveling-unknown-costs-of-cloudwatch-metrics-b1f1fffe33ff">Check it out here</a>.</em></p>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/aws"
+      >aws</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/cloudwatch"
+      >cloudwatch</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/cloudtrail"
+      >cloudtrail</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/athena"
+      >athena</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/cost-optimization"
+      >cost-optimization</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/cloud-finops"
+      >cloud-finops</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/doit"
+      >doit</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://masoodazizi.com/tags/doit-cloud-intelligence"
+      >doit-cloud-intelligence</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://masoodazizi.com/leo-turns-one-the-reality-of-first-time-dog-ownership/"
+      ><span>Leo Turns One: The Reality of First-Time Dog Ownership</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2025
+    <a class="link" href="https://masoodazizi.com/">Masood&#39;s Digital Space</a>
+  
+  </div>
+  <a class="link mx-6" href="https://www.linkedin.com/in/masood-azizi/" rel="noopener" target="_blank"
+    >LinkedIn</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/masoodazizi/"
+    rel="noopener"
+    target="_blank"
+    >GitHub</a
+  >
+</footer>
+
+  </body>
+</html>
+
+
+<meta property="og:title" content="Unraveling the Unknown Costs of CloudWatch Metrics">
+<meta property="og:description" content="A deep dive into uncovering hidden CloudWatch costs using CloudTrail and Athena to optimize AWS monitoring expenses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://masoodazizi.com/unraveling-the-unknown-costs-of-cloudwatch-metrics/">
+<meta property="og:image" content="https://masoodazizi.com/images/notebook-cost-analysis.png">
+<meta property="og:site_name" content="Masood&#39;s Digital Space">

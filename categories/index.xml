@@ -6,12 +6,19 @@
     <description>Recent content in Categories on Masood&#39;s Digital Space</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Feb 2025 20:07:32 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2025 16:31:22 +0100</lastBuildDate>
     <atom:link href="https://masoodazizi.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aws</title>
+      <link>https://masoodazizi.com/categories/aws/</link>
+      <pubDate>Thu, 13 Feb 2025 16:31:22 +0100</pubDate>
+      <guid>https://masoodazizi.com/categories/aws/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blog</title>
       <link>https://masoodazizi.com/categories/blog/</link>
-      <pubDate>Mon, 03 Feb 2025 20:07:32 +0100</pubDate>
+      <pubDate>Thu, 13 Feb 2025 16:31:22 +0100</pubDate>
       <guid>https://masoodazizi.com/categories/blog/</guid>
       <description></description>
     </item>
