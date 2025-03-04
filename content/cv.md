@@ -14,8 +14,11 @@ title = 'Curriculum Vitae'
 ### Senior Cloud Architect, DoiT International  
 **Remote, Germany**  
 *Since October 2022*
-- Tackles complex problems of scale for customers as a strategic partner of Google Cloud Platforms and Amazon Web Services.
-- Expertise in resolving problems, coding, algorithms, complexity analysis, and system design.
+- Assisted customers in resolving cloud challenges, optimizing performance, security, and cost efficiency.
+- Guided businesses in designing and implementing secure, high-performing cloud architectures following industry best practices.
+- Led Architecture Reviews, WAFR, Security Posture Reviews, and Cost Optimization Sessions to enhance infrastructure resilience.
+- Delivered AWS training on foundational concepts, networking, and security.
+- Contributed to the AWS community through blog posts, technical talks, and knowledge-sharing initiatives.
 
 ### DevSecOps Engineer, Spark Networks  
 **Berlin, Germany**  
@@ -85,33 +88,29 @@ Master Thesis: Protecting Users from Co-location Disclosures in OSNs (Grade: 1.3
 
 ## Technical Focus and Interests
 
-- Cloud Solutions with AWS  
-- DevSecOps, Security, and Privacy  
-- DevOps and Automation  
-- Shell and Python Scripting  
-- Linux Systems Administration  
-
+- Cloud Solutions with **AWS**  
+- DevSecOps, **Security**, and Privacy  
+- Infrastructure as Code (IaC) and Python **Scripting**
+- **Generative AI** Approaches and Applications
+ 
 ---
 
 ## Technical Skills
 
-- **Operating Systems:** Linux (Ubuntu, CentOS), MacOS, MS Windows  
-- **DevOps Tools:** Terraform, Kubernetes, Jenkins, GitLab, Docker, Vagrant, Ansible, CodePipeline, CodeBuild, CodeDeploy  
-- **AWS Services:** VPC, EC2, ECS, EKS, Lambda, S3, Aurora, Athena, CloudFront, Route 53, SQS, SNS, Organizations, Systems Manager  
-- **Security Tools:** IAM, Cognito, CloudWatch, CloudTrail, Config, Inspector, WAF, ACM, KMS, CloudHSM, GuardDuty, Secrets Manager  
-- **Other Services:** Git, Apache, LDAP, iptables, SSH, VPN  
-- **Scripting:** Python, Shell, HTML, JSON, YAML  
-- **Databases:** MySQL, PostgreSQL, DynamoDB  
-- **Miscellaneous:** LaTeX, Vim, Atom, Kanban, Jira, Confluence, MS Office, WordPress, Photoshop, GIMP, iMovie  
+- **Cloud & DevOps:** AWS (VPC, S3, EC2, ECS, Lambda, RDS, Athena, CloudFront, CodePipeline, Bedrock), Kubernetes, Docker, GitHub
+- **Security & Compliance:** IAM, Control Tower, Organizations, Config, GuardDuty, WAF, KMS, Secrets Manager
+- **Scripting & Automation:** Python, Bash, AWS CLI, Terraform, CloudFormation
+- **Databases:** MySQL, PostgreSQL, DynamoDB
+- **OS & Tools:** Linux, macOS, Windows, Git, Jira, MS Office, WordPress, LaTeX
 
 ---
 
 ## Soft Skills
 
-- **Presentation:** Delivered webinars (e.g., "Boosting WordPress Applications with AWS")  
-- **Teamwork:** Effective communication and mentoring juniors  
-- **Management:** Project handling, customer engagement, and incident management  
-- **Negotiation:** Completed training in successful negotiation techniques  
+- **Technical Communication & Leadership:** Delivered technical talks, blog posts, and training sessions, contributing to the AWS community and fostering knowledge sharing.
+- **Mentorship & Team Collaboration:** Experienced in guiding junior engineers, and working effectively in cross-functional teams.
+- **Customer & Stakeholder Engagement:** Skilled in conducting architecture reviews, security assessments, and cost optimization discussions with business and technical teams.
+- **Adaptability & Continuous Learning:** Quickly adapts to emerging technologies and industry trends, ensuring up-to-date knowledge in cloud and Generative AI.
 
 ---
 
