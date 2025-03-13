@@ -76,6 +76,7 @@ Master Thesis: Protecting Users from Co-location Disclosures in OSNs (Grade: 1.3
 
 ## Professional Certificates
 
+- **AWS Certified AI Practitioner - Foundational**, AWS - *March 2025*
 - **AWS Certified Advanced Networking – Specialty**, AWS – *April 2024*  
 - **AWS Certified Solutions Architect – Professional**, AWS – *August 2023*
 - **Advanced AWS Well-Architected Best Practices**, AWS – *February 2023* 
