@@ -24,3 +24,10 @@ Please fill out the form below to get in touch with me:
     Send
   </button>
 </form>
+
+---
+
+  Prefer to talk directly? You can also
+  <a href="https://zeeg.me/masood" target="_blank" rel="noopener" style="color: #e87e29; text-decoration: underline;">
+    book a time in my calendar here.
+  </a>
